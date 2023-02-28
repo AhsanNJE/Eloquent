@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PhoneController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/user',[UserController::class,'index'])->name('user');
+
+Route::get('/phone',[PhoneController::class,'index'])->name('phone');

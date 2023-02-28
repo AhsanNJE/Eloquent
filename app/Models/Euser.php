@@ -15,6 +15,6 @@ class Euser extends Model
     
     public function phone()
     {
-        return $this->hasOne(Euser::class);
+        return $this->hasOne(phone::class,'user_id','id');
     }
 }

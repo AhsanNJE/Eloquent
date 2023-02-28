@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row mt-5">
             <div class="col-md-8 offset-md-2">
-                <a class="btn btn-info" href="#">All User</a>
+                <a class="btn btn-info" href="{{ route('phone') }}">All Phone</a>
                <table class="table">
                   <thead>
                   <tr>
@@ -23,12 +23,12 @@
                     </tr>
                   </thead>
                   <tbody>
-                  @foreach($user as $row)
+                  @foreach($phone as $row)
                     <tr>
-                        <td>{{ $row->id }}</td>
-                        <td>{{ $row->name }}</td>
-                        <td>{{ $row->email }}</td>
-                        <td>{{ $row->phone->phone }}</td>
+                        <td>{{ $row->user_id }}</td>
+                        <td>{{ $row->euser->name }}</td>
+                        <td>{{ $row->euser->email }}</td>
+                        <td>{{ $row->phone }}</td>
                     </tr>
                     @endforeach
                   </tbody>

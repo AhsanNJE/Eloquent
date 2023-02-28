@@ -13,7 +13,7 @@
         <div class="row mt-5">
             <div class="col-md-8 offset-md-2">
                 <a class="btn btn-info" href="{{ route('user') }}">All User</a>
-                <a class="btn btn-info" href="{{ route('user') }}">All User</a>
+                <a class="btn btn-info" href="{{ route('phone') }}">All Phone</a>
                 <a class="btn btn-info" href="{{ route('user') }}">All User</a>
                
             </div>

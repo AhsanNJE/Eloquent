@@ -13,4 +13,8 @@ class phone extends Model
         'phone',
         
     ];
+    public function euser()
+    {
+        return $this->belongsTo(Euser::class,'user_id','id');  
+    }
 }

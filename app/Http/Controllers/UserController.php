@@ -10,9 +10,9 @@ class UserController extends Controller
 {
     public function index()
     {
-        $user = Euser::all();
+        $user = Euser::get();
         // $user=DB::table('eusers')
-            // ->join('phones','eusers.id','phones.user_id')
+        //     ->join('phones','eusers.id','phones.user_id')
             // ->get();
         return view('user',compact('user'));
     }
